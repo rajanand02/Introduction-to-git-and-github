@@ -1,10 +1,10 @@
 /**
  * imageFill.js
- * Author & copyright (c) 2013: John Polacek
+ * Author & copyright (c) 2013: 
  * Dual MIT & GPL license
  *
- * Page: http://johnpolacek.github.com/fitimages.js
- * Repo: https://github.com/johnpolacek/imageFill.js/
+ * Page: http:///fitimages.js
+ * Repo: https://github.com//imageFill.js/
  *
  * The jQuery plugin for making an image fill its container (and be centered)
  * 
@@ -1937,7 +1937,7 @@ else {
 
 (function($,sr){
 
-  // debouncing function from John Hann
+  // debouncing function from 
   // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
   var debounce = function (func, threshold, execAsap) {
       var timeout;
@@ -1964,7 +1964,7 @@ else {
 })(jQuery,'smartresize');
 /*
 	TweenDeck - For making animated presentation decks with Greensock
-	by John Polacek (@johnpolacek) - with some help from @greensock himself
+	by  - with some help from @greensock himself
 
 	Powered by the Greensock Tweening Platform
 	http://www.greensock.com
@@ -2567,6 +2567,10 @@ slideHow2.add(TweenMax.to($('#slide-how .step').eq(1),0.25,{opacity:0}));
   var slideAction4 = new TimelineMax();
   slideAction4.add(TweenMax.from($('#slide-action .step').eq(3),0.5,{opacity:0, top:600, ease:Bounce.easeOut}));
   tl.add(slideAction4);
+
+  var slideAction5 = new TimelineMax();
+  slideAction5.add(TweenMax.from($('#slide-action .step').eq(4),0.5,{opacity:0, top:600, ease:Bounce.easeOut}));
+  tl.add(slideAction5);
 
 
   // SLIDE ======================================================================== //
