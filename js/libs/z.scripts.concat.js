@@ -2187,8 +2187,16 @@ else {
     }),0);
   });
 
+  var slideSuck2 = new TimelineMax();
+  slideSuck2.add(TweenMax.from($('#slide-suck .step3'),0.25,{opacity:0}));
+  $('#slide-suck .step3').find('span').css({position:'relative'}).each(function() {
+    slideSuck2.add(TweenMax.from($(this),0.25,{
+      left:Math.random()*1440-720, ease:Expo.easeOut
+    }),0);
+  });
   tl.add(slideSuck);
   tl.add(slideSuck1);
+  tl.add(slideSuck2);
 
 
   // SLIDE ======================================================================== //
