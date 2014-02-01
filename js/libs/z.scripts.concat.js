@@ -2360,7 +2360,7 @@ else {
   tl.add(slideHow1);
 
   var slideHow2 = new TimelineMax();
-  slideHow2.add(TweenMax.to($('#slide-how .step').eq(1),0.25,{opacity:0}));
+slideHow2.add(TweenMax.to($('#slide-how .step').eq(1),0.25,{opacity:0}));
   $('#slide-how .step').eq(2).find('.step-a span').css('position','relative').each(function(index) {
     slideHow2.add(TweenMax.from($(this),0.25,{opacity:0,left:Math.random()*800-400,top:-50,ease:Back.easeOut}),0.25+index*0.025);
   });
@@ -2388,6 +2388,16 @@ else {
     slideHow4.add(TweenMax.from($(this),0.2,{opacity:0,left:Math.random()*800-400,top:200,ease:Back.easeOut}),0.2+index*0.0125);
   });
   tl.add(slideHow4);
+  //var slideHow5 = new TimelineMax();
+  //slideHow5.add(TweenMax.to($('#slide-how .step').eq(3),0.25,{opacity:0}));
+  //$('#slide-how .step').eq(5).find('.step-a span').css('position','relative').each(function(index) {
+    //slideHow5.add(TweenMax.from($(this),0.25,{opacity:0,left:Math.random()*800-400,top:-50,ease:Back.easeOut}),0.25+index*0.025);
+  //});
+  //$('#slide-how .step').eq(5).find('.step-b span').css('position','relative').each(function(index) {
+    //slideHow5.add(TweenMax.from($(this),0.2,{opacity:0,left:Math.random()*800-400,top:200,ease:Back.easeOut}),0.2+index*0.0125);
+  //});
+  //tl.add(slideHow5);
+
 
 
   // SLIDE ======================================================================== //
@@ -2401,7 +2411,7 @@ else {
   slideExample.add(TweenMax.from($('#slide-example'),1.5,{opacity:0,rotationY:720, transformOrigin:"50% 50%", perspective:1000, ease:Elastic.easeOut}));
   slideExample.add(TweenMax.to($('body'),1,{backgroundColor:'#99cee2'}),0);
   tl.add(slideExample);
-
+/*
 
   // SLIDE ======================================================================== //
   var slideDemo = new TimelineMax();
@@ -2529,6 +2539,7 @@ else {
   slideOpen4.add(TweenMax.from($('#slide-open .step').eq(4),0.5,{opacity:0,left:Math.random()*1280-640,rotationX:Math.random()*360,rotationY:Math.random()*360, transformOrigin:Math.round(Math.random()*100)+'% '+Math.round(Math.random()*100)+'%'+' '+(Math.round(Math.random()*400)-200), perspective:2000,ease:Back.easeOut}));
   tl.add(slideOpen4);
 
+*/
 
   // SLIDE ======================================================================== //
   var slideAction = new TimelineMax();
@@ -2585,7 +2596,6 @@ else {
   slideAppendix.add(TweenMax.from($('#slide-appendix'),0.5,{opacity:0}));
 
   tl.add(slideAppendix);
-
 
   // send the timeline into TweenDeck - DONE!
   var deck = $.tweendeck(tl);
